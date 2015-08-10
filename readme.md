@@ -1,16 +1,14 @@
-Boilerplate Template
-====================
+Personal Front-end Template
+===========================
 
 CodeKit config file included.
-With Bower components: boostrap, bourbon, fancybox, font-awesome, jquery
+With Bower components: boostrap, bourbon, fancybox, font-awesome, jquery, parallax
 
-
-
-Rakefile
---------
+Run local server
+----------------
 Go to the root folder of this project and type
 ```
 rake
 ```
 
-open http://127.0.0.1:8000
+and open http://127.0.0.1:8000
