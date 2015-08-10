@@ -1,0 +1,174 @@
+@import "imports";
+@import "bourbon";
+
+
+body {
+    font-family: $Roboto;
+    font-size: 1.6em;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    color: $maintext;
+    background-color: $bgcolor;
+}
+
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+
+	margin: 0 auto (-$wrappush);
+}
+
+#push {
+	padding-bottom: $wrappush +1;
+}
+
+#footer {
+	background-color: $ColorDark;
+	.footerinner {
+		padding: 10px;
+		color: $brighttext;
+	}
+
+}
+
+
+#bourbondemo {
+
+    background-color: white;
+    padding: 10px;
+
+    @include border-top-radius(5px);
+    @include border-right-radius(5px);
+    @include border-bottom-radius(5px);
+    @include border-left-radius(5px);
+
+
+    @include border-width(1px 1px 1px 1px);
+    @include border-color(red green black blue);
+
+
+
+    @include border-style(solid solid solid solid);
+}
+
+
+
+/* Triangle */
+
+
+@mixin triangle($width,$dir,$tcolor) {
+	@if $dir == up {
+		width: 0;
+		height: 0;
+		border-left: $width solid transparent;
+		border-right: $width solid transparent;
+		border-bottom: $width solid $tcolor;
+		display: block;
+		margin: 0 auto;
+
+	}
+	@else if $dir == down {
+		width: 0;
+		height: 0;
+		border-left: $width solid transparent;
+		border-right: $width solid transparent;
+		border-top: $width solid $tcolor;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.triangle-up {
+	@include triangle($triangleSize, up, $bgcolor);
+}
+
+.triangle-down {
+	@include triangle($triangleSize, down, $bgcolor);
+}
+
+
+
+/* Parallax */
+
+
+.getoffset {
+	height: $parallaxHeight *2;
+	display: none;
+	}
+
+
+.maskParent {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.parallaxMask {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+
+.parallaxText {
+	position: relative;
+	padding-top: $parallaxHeight;
+	padding-bottom: $parallaxHeight;
+	padding-left: 0;
+	margin-bottom: 0;
+	text-align: center;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+	color: $brighttext;
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 3em;
+	letter-spacing: 0.1em;
+	border: none;
+
+}
+
+
+
+.section {height: $menuheight +20;}
+
+#parallaxSlice1,
+#parallaxSlice2,
+#parallaxSlice3,
+#parallaxSlice4
+{
+	width:100%;
+	background-repeat: no-repeat;
+	background-attachment:scroll;
+	background-size: cover;
+	background-position: top center;
+}
+
+#parallaxSlice1,
+#parallaxSlice2,
+#parallaxSlice3,
+#parallaxSlice4
+ {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-size: cover;
+	background-color: $bgcolor;
+}
+
+#parallaxSlice1 {
+	background-image: url('/site_media/img/parallax1.jpg');
+}
+
+#parallaxSlice2 {
+	background-image: url('/site_media/img/parallax2.jpg');
+}
+
+#parallaxSlice3 {
+	background-image: url('/site_media/img/parallax3.jpg');
+}
+
+#parallaxSlice4 {
+	background-image: url('/site_media/img/parallax4.jpg');
+}

@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100&subset=latin-ext);
+@media (min-width: 979px) {
+  #leftmenufixed.affix-top {
+    position: static;
+    width: 228px; }
+
+  #leftmenufixed.affix {
+    position: fixed;
+    top: 130px;
+    width: 228px; } }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* STYLES GO HERE */
+  .section {
+    height: 80px !important; } }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* STYLES GO HERE */ }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* STYLES GO HERE */ }
+/* iPads (portrait and landscape) ----------- */
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* STYLES GO HERE */ }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* STYLES GO HERE */ }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* STYLES GO HERE */ }
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* STYLES GO HERE */ }
+/* iPhone 5 (portrait &amp; landscape)----------- */
+/* iPhone 5 (landscape)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /* STYLES GO HERE */ }
+/* iPhone 5 (portrait)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* STYLES GO HERE */ }
+body {
+  padding-top: 70px;
+  padding-bottom: 30px; }
+
+/* Parallax */
+.getoffset {
+  height: 300px;
+  display: none; }
+
+.maskParent {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.parallaxMask {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute; }
+
+.parallaxText {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 0;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 3em;
+  letter-spacing: 0.1em;
+  border: none; }
+
+.section {
+  height: 100px; }
+
+#parallaxSlice1,
+#parallaxSlice2,
+#parallaxSlice3,
+#parallaxSlice4 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top center; }
+
+#parallaxSlice1,
+#parallaxSlice2,
+#parallaxSlice3,
+#parallaxSlice4 {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-size: cover;
+  background-color: #fff; }
+
+#parallaxSlice1 {
+  background-image: url("/site_media/img/parallax1.jpg"); }
+
+#parallaxSlice2 {
+  background-image: url("/site_media/img/parallax2.jpg"); }
+
+#parallaxSlice3 {
+  background-image: url("/site_media/img/parallax3.jpg"); }
+
+#parallaxSlice4 {
+  background-image: url("/site_media/img/parallax4.jpg"); }
